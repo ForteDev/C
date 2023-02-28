@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+char* mystrrev(char*);p
+
 int main()
 {
     char A[10], B[10];
@@ -30,8 +32,7 @@ int main()
 char* mystrrev(char* str)
     {
     int len = strlen(str);
-    char* reversed_str[len];
-
+    char* reversed_str = (char *)malloc(sizeof(char)*len);
     for(int i = 0; i < len; i++)
     {
         reversed_str[i] = str[len - 1 - i];
