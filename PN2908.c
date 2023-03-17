@@ -30,12 +30,7 @@ int main()
 char* mystrrev(char* str)
     {
     int len = strlen(str);
-<<<<<<< HEAD
-    char* reversed_str = (char *)malloc(sizeof(char) * len);
-
-=======
     char* reversed_str = (char *)malloc(sizeof(char)*len);
->>>>>>> 91efdd7a7723de2b97e5e9904b96c5d252230e71
     for(int i = 0; i < len; i++)
     {
         reversed_str[i] = str[len - 1 - i];
